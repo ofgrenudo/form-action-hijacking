@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  background-color: hsl(28, 15%, 88%);
+}
+#page {
+  min-height: 100%;
+  max-width: 32rem;
+  background-color: hsl(28, 15%, 99%);
+}
+#content {
+  max-width: 19rem;
+}
+#content > .grid-x {
+  margin: 3rem 0;
+}
+#alerts {
+  margin-bottom: 2rem;
+}
+input + .help-text {
+  text-align: right;
+}
+@media only screen and (min-width: 767px) {
+html {
+  background: url("https://wmich.edu/oit/wmu-login-photo.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  background: none;
+}
+}

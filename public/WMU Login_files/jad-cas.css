@@ -1,0 +1,36 @@
+/*
+ * Licensed to Apereo under one or more contributor license
+ * agreements. See the NOTICE file distributed with this work
+ * for additional information regarding copyright ownership.
+ * Apereo licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License.  You may obtain a
+ * copy of the License at the following location:
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+#msg {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+#msg.errors {
+  border: 1px dotted #BB0000; 
+  color: #BB0000; 
+  padding-left: 100px; 
+  background: url(../../../images/error.png) no-repeat 20px center;
+}
+
+#msg.success { border: 1px dotted #390; color: #390; padding-left: 100px; background: url(../../../images/success.png) no-repeat 20px center; }
+#msg.info { border: 1px dotted #008; color: #008; padding-left: 100px; background: url(../../../images/info.png) no-repeat 20px center; }
+#msg.question { border: 1px dotted #390; color: #390; padding-left: 100px; background: url(../../../images/question.png) no-repeat 20px center; }
+#msg.warn { border: 1px dotted #960; color: #960; padding-left: 100px; background: #ffbc8f url(../../../images/info.png) no-repeat 20px center; }
+

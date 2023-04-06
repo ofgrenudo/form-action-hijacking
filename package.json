@@ -1,0 +1,28 @@
+{
+  "name": "form_action_hijacking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "needle": "^2.4.0",
+    "nodejs": "^0.0.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winters-brown/form_action_hijacking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winters-brown/form_action_hijacking/issues"
+  },
+  "homepage": "https://github.com/winters-brown/form_action_hijacking#readme"
+}

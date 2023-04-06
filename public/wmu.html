@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login page for WMU web applications">
+
+    <title>WMU Login</title>
+
+    <link rel="apple-touch-icon" href="https://webauth.wmich.edu/themes/wmu-simplify/images/apple-touch-icon.png">
+    <link rel="icon" href="https://webauth.wmich.edu/themes/wmu-simplify/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="WMU%20Login_files/css.css">
+    <link rel="stylesheet" href="WMU%20Login_files/patterns.css">
+    <link rel="stylesheet" href="WMU%20Login_files/app.css">
+    
+    <link rel="stylesheet" href="WMU%20Login_files/jad-cas.css">
+
+    <script src="WMU%20Login_files/fd6ace69e1.js"></script><link rel="stylesheet" href="WMU%20Login_files/free.css" media="all">
+</head>
+
+<body>
+
+    <div id="page" class="grid-container"><div class="grid-x align-center"><div id="content" class="cell"><header class="grid-x align-center"><div class="cell small-6 text-center"><img src="WMU%20Login_files/w.svg" alt="Western Michigan University logo"><h1 class="show-for-sr">WMU Login</h1></div></header> <main class="grid-x"><aside id="alerts" aria-labelledby="alerts-title" class="cell"><h2 id="alerts-title" class="show-for-sr">Service interruptions</h2> <ul class="no-bullet"><li class="callout secondary"><a href="https://wmich.edu/7help/hdblog/post/1795">Internet Explorer End of Life Notice for Elearning starting 01/01/20</a></li></ul></aside> <aside id="screenWarnusername" aria-labelledby="screen-warnusername-alert-title" class="cell" style="display: none;"><div id="genericCalloutAlert" class="callout alert"><h2 id="screen-warnusername-alert-title" class="h5"></h2> <p></p></div></aside> <aside id="cookiesDisabled" aria-labelledby="cookie-alert-title" class="cell" style="display: none;"><div class="callout alert"><h2 id="cookie-alert-title" class="h5">
+					Please enable browser cookies
+ 				</h2> <p>
+					Single Sign-On <strong>will not work</strong> if cookies are disabled.
+ 				</p></div></aside> <aside id="capslock-on" aria-labelledby="capslock-on-title" class="cell" style="display: none;"><div class="callout alert"><h2 id="capslock-on-title" class="h5">
+					CAPSLOCK key is turned on!
+				</h2> <p>
+					Please turn off Caps Lock before proceeding.
+				</p></div></aside> <div class="cell"><h2 class="show-for-sr">Login form</h2> <form id="fm1" method="post" class="log-in-form" action="/wmu"><label for="username">Bronco NetID</label> <input id="username" name="username" tabindex="1" type="text" size="25" autocomplete="off"> <p class="help-text"><a href="https://wmich.edu/helpdesk/selfhelp/bronconetid">Forgot Bronco NetID?</a></p> <span id="bnidError1" role="alert" class="form-error"></span> <label for="password">Password</label> <input id="password" name="password" tabindex="2" type="password" value="" size="25" autocomplete="off"> <p class="help-text"><a href="https://www.wmich.edu/changepassword/wmu/main?theAction=action.changepassword">Forgot/change password?</a></p> <p><input type="hidden" name="lt" value="LT-35037-ezjPqvS0PDgwAbZ7jVUfBJeogj2s9J"> <input type="hidden" name="execution" value="706e7de2-e6ee-4882-8859-a5a09332ff2a_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuVkZkQmRqUk9NV3B5TTA0eWJFdFFaV0ZTZEdaQmNuSm9UVm8wY2tkbFdFZDBTSFZ0T1M5YWVYTlRRM2x1ZUN0M1pVRjZWMnhQUTNsNksxa3JNMWRwY0VkeU5FeGhWVTg1T0dSTFdEUlRVbFY1ZDJjdmVXOXhhM1pJTjAxNFpWaFJUVFk1ZVU5M0t6WkxZbGxPZGpGb2NWZFRURk0zWjFob2J6bEVVMWhqWTA1SGEyZEtSV1lyZURRelprOVZVa2d5VjJoeVN6SjZUVkpIZG1wSGVraEdZMU51VTBaMlpIQk1ZM1JGWjNOdVNVdEZkRzR4TkVZdlVGVTRjVUo2YjBGVk1uUnViV1JaYWtKMk1XSnZSR3BGVkU5ME5rTnRVa000U3pRM0wwWjFVM1ZIWlM5V1JGWmhiMVpzZEhBdlYxaFJhbGxaVEZObFExUlVVVk0zYldwSVNHbDZLMFZUVUhscVoycFRZbFowY0VGYVNFUldjbGR0VDNOdU1EUlFjVFJtZFhnNWRpdFVWbEZvUXpoWk0yNWphRFZ4VkhKbFZ6Uk9UV3hyUjNaelpITkpaREpEVkM5cFVWRXpVQ3RDUlVoSWNFRnljeXN4VjNkNFZYRnVVRnBRTDFCcGNsVldURU40YURGTmFrSjFSRzg1U0ZoVVdWbHNRV1JFUVhkNlkweEJiM0JMU1dwUmVVOUNabGRxT0daSmJsQlJjRTVNVERCdFFraHdUMmxFTDNacldGVm1TVlpDYlhwMlozaDVkSFU1YkVsQ1ZsZFdUMWdyTnpCck9XMXZjalp6WjJSTGFUbFZlSEJ0YzJGQmRrNUpUakl2SzFsMVZVOVpjWGh2Ym1GSGFVeFZXbXR2VWpaTGFYSlpaRk5oY0ZwbVVTOXZRMG8wTVc1dlFtaDRNbGhhVDBKUVJEVkRObk5oUkM5ck0yeHBTVTlJTjNrdlpYTTBXVnBHY1hOdFVtWlZja05PSzBvNWQwaGxOVkJxZUhwVU56ZHVVREJ1VDFNemExRXZkVlozYkRaTWNVdHpWblpNV1RSNWJVcHhSVEJSTW5BdmVsVlhaMjU2UWtack5XTXhTRXBQUW1kUVJFVnNjRFpOTDJkUVdIWmpNRzU1VTAxeFNXOWFObVJoUzJ0aFRGUlpXamsxT1ZOSFVHTk9TMXB6U0RkbmJVWkZRa0k1TTFsek5WSTBSV2hXUm14VU1ESldhRTFWYWpkS2NtbFZUekY1Ym5abVlraFRWVWRWU1dFelptcEZZMlUzU3pWM1NGZFJTbUoxZWxkb1kxcFNVMVIwY0drdmRsZ3ZUMVYwWjNFNVJYTjVWM0F3ZURSUVRsSkhWREJVTkVKcU9VaGlkbGwzTHpkaVJuTklSelpXUWtkRVNsZE9RVnA2VVRCMmEyTlVRVVJsWldWTVpsTXpSbTFNTDJaR2ExTkJWR0ZMTVRKUWRYUTJWbkprTlVWa00xcHNlbHB4V1UwMVFVbzRNbE5hUjFoT1VHWXlhVTE0ZWpWaGFqSk5hMWhyWlVSaWRUQnNaM1J1TjJaU1VIQk5kVVJZVFUxSVluRlVZelpKY2l0RVFVMHpUM1Z1VnpWdlVsTnJjRXBMZUROaFdIRlFUVVJLYVROT1dIY3hibTlPVm5wMGEyVjBWekF5ZWlzMFZpdHllVU5hWVdaTmNVZEliRUUxWlhOaGFHeEtNRkYwSzJwSWF6UnlSbkFyZFhGa1NXSkxjbFFyWWpWMVJHbHNNVk14YlRkMmRYSjZkR0paUlhKMVpsbENhMmxqYzNkeUx6RXlhREJvVkdKbWIyWnNORTFxVFVoS1NXSjNhV1EwUlZKUmRYSkdObXBIUTBWUVdUUlFPRzU2VUVGQlRVVXZiVWhLU2xWR1JqWkhlVnBxYzNCd00yMXlXWE13U1RocFYzSjZOV3AzVkVOVlpsQkJiM2REWmtRNE9FOTNiRVF4YTFWb1RtMWhNblJ2Wmk5bmJtRjVZVTFPUlRsWloxQmFUVzh2WkRGbGRXUnhWR2REVDBwSFIyNWlWbEpqYlhKYVZGaGxiMEo2TTBzMVl5dHpUbEJuU1d4MFQwVXpjR05OT1dGSFlqSTJaRE56UzBoMVVXZEJReTlwTjJoMU5XWk1hbFl3YVhScGIxUXlORWhOWnpGTFVYVlVhamh4TDNwa1NVRjRNa1F3WjFoSmQzQnVVVEJ1V0U4elJFRTlQUS41TXhNbDUyY1ZKYkk2dDZWVUtqc0ZfR0I3LVVqWGQ2NG9WTnJfR3BZdFZmSEpzYzNER3Nhckk2c2daMy1icjEweVcxLXg4NVVnS25ab1YwZkctc0o5QQ=="> <input type="hidden" name="_eventId" value="submit"> <input name="submit" value="Log In" tabindex="3" type="submit" class="button expanded"></p> <div></div></form> <p class="text-center"><a href="https://wapps.wmich.edu/authuser/">Parents/authorized/proxy users log in here</a></p></div></main> <footer class="grid-x"><div class="cell text-right"><p class="lead"><a href="https://wmich.edu/helpdesk/selfhelp/wmu-login"><span aria-hidden="true" class="far fa-question-circle"></span> Help</a></p> <p>Server ID 2</p></div></footer></div></div></div>
+	<script src="WMU%20Login_files/jquery_002.js"></script>
+	<script src="WMU%20Login_files/polyfill.js"></script>
+	<script src="WMU%20Login_files/axios.js"></script>
+	<script src="WMU%20Login_files/vue.js"></script>
+	<script src="WMU%20Login_files/app.js"></script>
+	<script src="WMU%20Login_files/jquery_002.js"></script>
+	<script src="WMU%20Login_files/jquery.js"></script>
+	
+    <script type="text/x-template" id="announcement-template">
+      <li class="callout" v-bind:class="{ warning: current, secondary: !current }">
+        <a v-bind:href="url">{{ description }}</a>
+      </li>
+    </script>
+
+	<script>
+
+	$(document).ready(function() {
+		document.msCapsLockWarningOff = true;
+		if ($(":focus").length === 0){
+            $("input:visible:enabled:first").focus();
+        }
+        if (areCookiesEnabled()) {
+        	$('#cookiesDisabled').hide();
+        } else {
+        	$('#cookiesDisabled').show();   
+        }  
+	});
+
+
+	
+	function areCookiesEnabled() {
+	    $.cookie('cookiesEnabled', 'true');
+	    var value = $.cookie('cookiesEnabled');
+	    if (value != undefined) {
+	        $.removeCookie('cookiesEnabled');
+	        return true;
+	    }
+	    return false;
+	}
+
+		
+		
+		$('input[type="submit"]').on('click', function() {
+			var tmpVal = $("#username").val();
+			$("#username").val(tmpVal.trim());
+		});
+		
+
+		$("#screenWarnusername").hide();
+		$("#username")
+				.on(
+						"keyup",
+						function() {
+							var theInput = $(this).val().trim();
+							if ((theInput.keyCode >= 9 && theInput.keyCode <= 45)
+									|| (theInput.keyCode >= 91 && theInput.keyCode <= 93)
+									|| (theInput.keyCode >= 112 && theInput.keyCode <= 145)) {
+								return;
+							}
+							var winRegExp = new RegExp('^[0-9]{9}');
+							if (winRegExp.test(theInput)) {
+								$("#genericCalloutAlert h2:first")
+										.text(
+												'Bronco NetID format error! ');
+								$("#genericCalloutAlert p:first")
+										.text(
+												'It appears you may be entering your Western Identification number (WIN) instead of your Bronco NetID. ');
+								$("#screenWarnusername").show();
+							} else if (theInput.indexOf('@') > -1) {
+								$("#genericCalloutAlert h2:first")
+										.text(
+												'Bronco NetID format error! ');
+								$("#genericCalloutAlert p:first")
+										.text(
+												'It appears you have entered your email address instead of your Bronco NetID. ');
+								$("#screenWarnusername").show();
+							} else {
+								$("#genericCalloutAlert h2:first").text('');
+								$("#genericCalloutAlert p:first").text('');
+								$("#screenWarnusername").hide();
+							}
+							return true;
+						});
+
+		$('#capslock-on').hide();
+		$('#password').keypress(function(e) {
+			var s = String.fromCharCode(e.which);
+			if (s.toUpperCase() === s && s.toLowerCase() !== s && !e.shiftKey) {
+				$('#capslock-on').show();
+			} else {
+				$('#capslock-on').hide();
+			}
+		});
+
+		if (typeof (jqueryReady) == "function") {
+			jqueryReady();
+		}
+			
+	</script>
+
+
+</body></html>
